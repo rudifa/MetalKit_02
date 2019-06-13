@@ -24,6 +24,7 @@ extension matrix_float4x4 {
         let z1 = farZ / (nearZ - farZ)
         let w = (z1 * nearZ)
         
+        self.init()
         columns = (
             float4(x,0,0,0),
             float4(0,y,0,0),
