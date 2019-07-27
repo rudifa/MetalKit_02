@@ -14,6 +14,7 @@ class Renderer: NSObject {
     
     init(device: MTLDevice) {
         super.init()
+        printClassAndFunc()
         createCommandQueue(device: device)
         scenes.append(CubeScene(device: device))
     }

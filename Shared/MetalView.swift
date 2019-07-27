@@ -13,6 +13,7 @@ class MetalView: MTKView {
     
     required init(coder: NSCoder) {
         super.init(coder: coder)
+        printClassAndFunc()
         // Make sure we are on a device that can run metal!
         guard let defaultDevice = MTLCreateSystemDefaultDevice() else {
             fatalError("Device loading error")
