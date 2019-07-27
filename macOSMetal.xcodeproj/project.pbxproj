@@ -17,7 +17,6 @@
 		2942685C2097593A008B0C65 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2942685B2097593A008B0C65 /* AppDelegate.swift */; };
 		294268602097593B008B0C65 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2942685F2097593B008B0C65 /* Assets.xcassets */; };
 		294268632097593B008B0C65 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 294268612097593B008B0C65 /* Main.storyboard */; };
-		2942686C20975A34008B0C65 /* MetalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2942686B20975A34008B0C65 /* MetalView.swift */; };
 		2942686E20975C55008B0C65 /* Renderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2942686D20975C55008B0C65 /* Renderer.swift */; };
 		2942687020976100008B0C65 /* Shaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = 2942686F20976100008B0C65 /* Shaders.metal */; };
 		9D706E2222ECDE2D00B1BB00 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D706E2022ECDE2D00B1BB00 /* Main.storyboard */; };
@@ -26,8 +25,10 @@
 		9D706E2C22ECDE8C00B1BB00 /* DebugUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7559EC22EA63A000F0C939 /* DebugUtil.swift */; };
 		9D706E2F22ECF4BC00B1BB00 /* BiPlatformExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D706E2E22ECF4BC00B1BB00 /* BiPlatformExtensions.swift */; };
 		9D7559ED22EA63A100F0C939 /* DebugUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7559EC22EA63A000F0C939 /* DebugUtil.swift */; };
+		9D92D2172306B14200B32148 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D92D2162306B14200B32148 /* ViewController.swift */; };
+		9D92D2182306B14200B32148 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D92D2162306B14200B32148 /* ViewController.swift */; };
+		9D92D2192306B1F200B32148 /* BiPlatformExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D706E2E22ECF4BC00B1BB00 /* BiPlatformExtensions.swift */; };
 		9DF5F18822ECF71700A02DD4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2942685B2097593A008B0C65 /* AppDelegate.swift */; };
-		9DF5F18A22ECF77500A02DD4 /* MetalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2942686B20975A34008B0C65 /* MetalView.swift */; };
 		9DF5F18B22ECF79C00A02DD4 /* Renderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2942686D20975C55008B0C65 /* Renderer.swift */; };
 		9DF5F18C22ECF7A100A02DD4 /* Shaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = 2942686F20976100008B0C65 /* Shaders.metal */; };
 		9DF5F18D22ECF7A400A02DD4 /* Types.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2900940820E6BF5E00CE1EA5 /* Types.swift */; };
@@ -53,9 +54,9 @@
 		294268622097593B008B0C65 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		294268642097593B008B0C65 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		294268652097593B008B0C65 /* macOSMetal.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOSMetal.entitlements; sourceTree = "<group>"; };
-		2942686B20975A34008B0C65 /* MetalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetalView.swift; sourceTree = "<group>"; };
 		2942686D20975C55008B0C65 /* Renderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Renderer.swift; sourceTree = "<group>"; };
 		2942686F20976100008B0C65 /* Shaders.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Shaders.metal; sourceTree = "<group>"; };
+		9D69025822FDB22100BE0FDF /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		9D706E1A22ECDE2D00B1BB00 /* iOSMetal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSMetal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D706E2122ECDE2D00B1BB00 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9D706E2322ECDE2E00B1BB00 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -63,6 +64,7 @@
 		9D706E2822ECDE2E00B1BB00 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9D706E2E22ECF4BC00B1BB00 /* BiPlatformExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BiPlatformExtensions.swift; sourceTree = "<group>"; };
 		9D7559EC22EA63A000F0C939 /* DebugUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DebugUtil.swift; sourceTree = "<group>"; };
+		9D92D2162306B14200B32148 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +100,7 @@
 		2942684F2097593A008B0C65 = {
 			isa = PBXGroup;
 			children = (
+				9D69025822FDB22100BE0FDF /* README.md */,
 				9D706E2D22ECDEC300B1BB00 /* Shared */,
 				2942685A2097593A008B0C65 /* macOSMetal */,
 				9D706E1B22ECDE2D00B1BB00 /* iOSMetal */,
@@ -140,7 +143,7 @@
 			isa = PBXGroup;
 			children = (
 				2942685B2097593A008B0C65 /* AppDelegate.swift */,
-				2942686B20975A34008B0C65 /* MetalView.swift */,
+				9D92D2162306B14200B32148 /* ViewController.swift */,
 				2942686D20975C55008B0C65 /* Renderer.swift */,
 				2942686F20976100008B0C65 /* Shaders.metal */,
 				2900940520E6BD8A00CE1EA5 /* Node */,
@@ -266,9 +269,9 @@
 				2900941120E6C40900CE1EA5 /* Cube.swift in Sources */,
 				2900940720E6BEB300CE1EA5 /* Primitive.swift in Sources */,
 				2900940920E6BF5E00CE1EA5 /* Types.swift in Sources */,
+				9D92D2172306B14200B32148 /* ViewController.swift in Sources */,
 				2900940420E6BD6400CE1EA5 /* Node.swift in Sources */,
 				9D706E2F22ECF4BC00B1BB00 /* BiPlatformExtensions.swift in Sources */,
-				2942686C20975A34008B0C65 /* MetalView.swift in Sources */,
 				2900940F20E6C3DE00CE1EA5 /* CubeScene.swift in Sources */,
 				2942686E20975C55008B0C65 /* Renderer.swift in Sources */,
 				2942685C2097593A008B0C65 /* AppDelegate.swift in Sources */,
@@ -283,17 +286,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				9DF5F18B22ECF79C00A02DD4 /* Renderer.swift in Sources */,
-				9DF5F18A22ECF77500A02DD4 /* MetalView.swift in Sources */,
 				9DF5F19122ECF7BD00A02DD4 /* Scene.swift in Sources */,
 				9DF5F18822ECF71700A02DD4 /* AppDelegate.swift in Sources */,
 				9DF5F18F22ECF7BD00A02DD4 /* Node.swift in Sources */,
 				9DF5F19222ECF7BD00A02DD4 /* CubeScene.swift in Sources */,
 				9DF5F19022ECF7BD00A02DD4 /* Primitive.swift in Sources */,
 				9DF5F18E22ECF7A800A02DD4 /* Math.swift in Sources */,
+				9D92D2182306B14200B32148 /* ViewController.swift in Sources */,
 				9DF5F19322ECF7BD00A02DD4 /* Cube.swift in Sources */,
 				9DF5F18D22ECF7A400A02DD4 /* Types.swift in Sources */,
 				9D706E2C22ECDE8C00B1BB00 /* DebugUtil.swift in Sources */,
 				9DF5F18C22ECF7A100A02DD4 /* Shaders.metal in Sources */,
+				9D92D2192306B1F200B32148 /* BiPlatformExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

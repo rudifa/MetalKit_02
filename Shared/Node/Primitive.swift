@@ -26,7 +26,7 @@ class Primitive: Node {
         super.init()
         buildVertices()
         buildBuffers(device: device)
-        buildPipelineState(device: device)
+        makeRenderPipelineState(device: device)
         buildDepthStencil(device: device)
     }
     
@@ -45,9 +45,9 @@ class Primitive: Node {
     }
     
     /// Creatre the PipelineState containing the Shader functions
-    private func buildPipelineState(device: MTLDevice) {
-        let library = device.makeDefaultLibrary()
+    private func makeRenderPipelineState(device: MTLDevice) {
         // Retrieve the shader functions
+        let library = device.makeDefaultLibrary()
         let vertexFunction = library?.makeFunction(name: "basic_vertex_function")
         let fragmentFunction = library?.makeFunction(name: "basic_fragment_function")
         
@@ -70,9 +70,9 @@ class Primitive: Node {
         
         vertexDescriptor.layouts[0].stride = MemoryLayout<Vertex>.stride
         
-        // Create the PipelineState
         renderPipelineDescriptor.vertexDescriptor = vertexDescriptor
-        
+
+        // Create the PipelineState
         do {
             renderPipelineState = try device.makeRenderPipelineState(descriptor: renderPipelineDescriptor)
         } catch {
